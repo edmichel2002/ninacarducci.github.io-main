@@ -1,31 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+	<!--description,viewport,keywords,author,robots,  -->
+	<meta name="description" content="Nina Carducci - Photographe professionnelle en Île-de-France spécialisée dans les portraits, mariages, et événements. Portfolio et services en ligne.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="photographe, photographie, Nina Carducci, portraits, mariages, événements, Île-de-France">
+	<meta name="author" content="Nina Carducci">
+	<meta name="robots" content="index, follow">
+
+	<!--Open Graph Meta Tags-->
+	<meta property="og:title" content="Nina Carducci - Photographe">
+	<meta property="og:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle en Île-de-France.">
+	<meta property="og:image" content="./assets/images/og-image.jpg">
+	<meta property="og:url" content="https://ninacarducci.github.io/">
+	<meta property="og:type" content="https://ninacarducci.github.io/">
+
+	<!--Twitter Card Tags-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci - Photographe">
+	<meta name="twitter:description" content="Portfolio professionnel de Nina Carducci, spécialisée en photographie de portraits et d'événements.">
+	<meta name="twitter:image" content="https://ninacarducci.github.io/">
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<title>Nina Carducci-Portfolio</title>
+
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nina Carducci Photographie",
+  "image": "https://ninacarducci.github.io/",
+  "@id": "https://ninacarducci.github.io/",
+  "url": "https://ninacarducci.github.io/",
+  "telephone": "05 56 67 78 89",
+  "priceRange": "350€/day" "50€/photo" "400€ album A4
+  30 pages recto/verso",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "68 avenue Alsace-Lorraine",
+    "addressLocality": "Bordeaux",
+	"addressRegion": "Aquitaine",
+    "postalCode": "33200",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.856614,
+    "longitude": 2.3522219
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "15:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/ninacarducci.photo",
+    "https://www.facebook.com/ninacarducci.photo"
+  ]
+}
+</script>
 </head>
+
 <body>
-<div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
+<!-- Utilisation des balises sémantiques pour l'en-tête -->
+<header class="top-header">
+	<h1 class="name">Nina Carducci</h1> <!-- H1 est utilisé pour le titre principal de la page -->
+	<nav class="nav">   
 		<ul>
+			<!-- ... Liens de navigation ... -->
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
 		</ul>
-	</div>
-</div>
+	</nav>
+</header>
+
+<main>
 <div id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -36,13 +108,16 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/m_ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" srcset="./assets/images/slider/m_ryoji-iwata-wUZjnOv7t0g-unsplash.jpg 600w, ./assets/images/slider/m_ryoji-iwata-wUZjnOv7t0g-unsplash.jpg 1200w" class="d-block w-100" sizes="(max-width: 600px) , 1200px" alt="Vue urbaine de Ryoji Iwata" width="1200"
+				height="650">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/m_nicholas-green-nPz8akkUmDI-unsplash.jpg" srcset="./assets/images/slider/m_nicholas-green-nPz8akkUmDI-unsplash.jpg 600w, ./assets/images/slider/m_nicholas-green-nPz8akkUmDI-unsplash(1).jpg 1200w"  class="d-block w-100" sizes="(max-width: 600px) , 1200px" alt="Concert photographié de Nicholas Green" width="1200"
+				height="650">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/m_edward-cisneros-3_h6-1NPDGw-unsplash.jpg" srcset="./assets/images/slider/m_edward-cisneros-3_h6-1NPDGw-unsplash.jpg 600w, ./assets/images/slider/m_edward-cisneros-3_h6-1NPDGw-unsplash.jpg 1200w" class="d-block w-100" sizes="(max-width: 600px) , 1200px" alt="Mariage photographié d'Edward Cisneros" width="1200"
+				height="650">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -57,7 +132,8 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png">
+		<img src="./assets/images/m_nina.png" srcset="./assets/images/m_nina.png 600w, ./assets/images/m_nina.png 1200w" width="600"
+		height="600" alt="Portrait de Nina Carducci, photographe">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -70,15 +146,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/m_aaron-paul-wnX-fXzB6Cw-unsplash.jpg" srcset="./assets/images/gallery/concerts/m_aaron-paul-wnX-fXzB6Cw-unsplash.jpg 300w, ./assets/images/gallery/concerts/m_aaron-paul-wnX-fXzB6Cw-unsplash.jpg 600w, ./assets/images/gallery/concerts/m_aaron-paul-wnX-fXzB6Cw-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" alt="concert aaron"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/m_ali-morshedlou-WMD64tMfc4k-unsplash.jpg" srcset="./assets/images/gallery/entreprise/m_ali-morshedlou-WMD64tMfc4k-unsplash.jpg 300w, ./assets/images/gallery/entreprise/m_ali-morshedlou-WMD64tMfc4k-unsplash.jpg 600w, ./assets/images/gallery/entreprise/m_ali-morshedlou-WMD64tMfc4k-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" width="800" height="798" alt="m_ali-morshedlou"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/m_jason-goodman-tHO1_OuKbg0-unsplash.jpg" srcset="./assets/images/gallery/entreprise/m_jason-goodman-tHO1_OuKbg0-unsplash.jpg 300w, ./assets/images/gallery/entreprise/m_jason-goodman-tHO1_OuKbg0-unsplash.jpg 600w, ./assets/images/gallery/entreprise/m_jason-goodman-tHO1_OuKbg0-unsplash.jpg 1200w"sizes="(max-width: 600px) 600px, 1200px" alt="jason goodman"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/m_hannah-busing-RvF2R_qMpRk-unsplash.jpg" srcset="./assets/images/gallery/mariage/m_hannah-busing-RvF2R_qMpRk-unsplash.jpg 300w, ./assets/images/gallery/mariage/m_hannah-busing-RvF2R_qMpRk-unsplash.jpg 600w ./assets/images/gallery/mariage/m_hannah-busing-RvF2R_qMpRk-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" alt="m_hannah"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/m_ade-tunji-rVkhWWZFAtQ-unsplash.jpg" srcset="./assets/images/gallery/portraits/m_ade-tunji-rVkhWWZFAtQ-unsplash.jpg 300w, ./assets/images/gallery/portraits/m_ade-tunji-rVkhWWZFAtQ-unsplash.jpg 600w, ./assets/images/gallery/portraits/m_ade-tunji-rVkhWWZFAtQ-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" alt="ade"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/m_jakob-owens-SiniLJkXhMc-unsplash.jpg" srcset="./assets/images/gallery/mariage/m_jakob-owens-SiniLJkXhMc-unsplash.jpg 300w, ./assets/images/gallery/mariage/m_jakob-owens-SiniLJkXhMc-unsplash.jpg 600w, ./assets/images/gallery/mariage/m_jakob-owens-SiniLJkXhMc-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px"  alt="jakob" width="800" height="798"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/m_nino-van-prattenburg--443cl1uR_8-unsplash.jpg" srcset="./assets/images/gallery/portraits/m_nino-van-prattenburg--443cl1uR_8-unsplash.jpg 300w, ./assets/images/gallery/portraits/m_nino-van-prattenburg--443cl1uR_8-unsplash.jpg 600w, ./assets/images/gallery/portraits/m_nino-van-prattenburg--443cl1uR_8-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" alt="nino"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/m_austin-neill-hgO1wFPXl3I-unsplash.jpg" srcset="./assets/images/gallery/concerts/m_austin-neill-hgO1wFPXl3I-unsplash.jpg 300w, ./assets/images/gallery/concerts/m_austin-neill-hgO1wFPXl3I-unsplash.jpg 600w, ./assets/images/gallery/concerts/m_austin-neill-hgO1wFPXl3I-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" alt="austin" width="800" height="798"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/m_mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" srcset="./assets/images/gallery/entreprise/m_mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg 300w, ./assets/images/gallery/entreprise/m_mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg 600w, ./assets/images/gallery/entreprise/m_mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" alt="mateus" width="800" height="700"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -133,7 +209,10 @@
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
+</main>
 </div>
+
+<footer>
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
@@ -150,9 +229,18 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png">
+			<img src="./assets/images/m_camera.png" srcset="./assets/images/m_camera.png 300w, ./assets/images/m_camera.png 600w, ./assets/images/m_camera.png 1200w" sizes="(max-width: 600px) 600px, 1200px" width="700" height="600" alt="appareil-photo">
 		</div>
 	</div>
 </div>
+</footer>
+<!-- Placer les scripts juste avant la fermeture de la balise body -->
+<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+<!-- S'assurer que l'intégrité correspond à celle du fichier jQuery utilisé -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./assets/maugallery.js"></script>
+<script src="./assets/scripts.js"></script>
+<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+
 </body>
 </html>
