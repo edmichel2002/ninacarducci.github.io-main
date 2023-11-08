@@ -6,6 +6,10 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+h2 {font-size: calc(1.375rem + 1.5vw);}
+h3 {font-size: 1.5rem;}
+h4 { font-size: 1.2rem;}
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -40,6 +44,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -48,6 +53,22 @@ body {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+}
+#about {
+	display: flex;
+	background-color: #F6D2B8;
+	padding-inline: 100px;
+	padding-block: 100px;
+	position: relative;
+}
+#about .picture div {
+	display: none;
+}
+#about .picture img{
+	aspect-ratio: 1 / 1;
+}
+.carousel-item img {
+	aspect-ratio: 16 / 7.4;
 }
 
 .picture.left::before {
@@ -90,9 +111,6 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -102,7 +120,7 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: rgb(59, 92, 9);
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
