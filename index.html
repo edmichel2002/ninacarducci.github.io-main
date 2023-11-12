@@ -27,7 +27,7 @@
 
 	<!-- External CSS & Fonts -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.css" media="all">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
@@ -145,15 +145,15 @@
         <h2 id="galleryTitle" class="title">Portfolio</h2>
         <div class="container py-3">
             <div class="gallery" display="none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"  class="d-block w-100" alt="concert aaron"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash.webp" class="d-block w-100" alt="ali-morshedlou" />
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"  class="d-block w-100" alt="jason-goodman"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-rvf2r-qmprk-unsplash.webp"  class="d-block w-100" alt="hannah-busing"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash.webp" class="d-block w-100" alt="ade-tunji"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash.webp"  class="d-block w-100" alt="jakob-owens" />
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/van-prattenburg-443cl1ur-8-unsplash.webp" class="d-block w-100" alt="nino-van-prattenburg"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"  class="d-block w-100" alt="austin-neill" />
-				<img data-gallery-tag="Entreprises" class="gallery-item" class="d-block w-100" alt="mateus-campos-felipe"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.web,700w" class="d-block w-100" alt="concert aaron"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash.webp" srcset="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash.webp,700w" class="d-block w-100" alt="ali-morshedlou" />
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp,700w" class="d-block w-100" alt="jason-goodman"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-rvf2r-qmprk-unsplash.webp" srcset="./assets/images/gallery/mariage/hannah-busing-rvf2r-qmprk-unsplash.webp,700w" class="d-block w-100" alt="hannah-busing"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash.webp" srcset="./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash.webp,700w" class="d-block w-100" alt="ade-tunji"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash.webp" srcset="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash.webp,700w" class="d-block w-100" alt="jakob-owens" />
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/van-prattenburg-443cl1ur-8-unsplash.webp" srcset="./assets/images/gallery/portraits/van-prattenburg-443cl1ur-8-unsplash.webp,700w" class="d-block w-100" alt="nino-van-prattenburg"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp,700w" class="d-block w-100" alt="austin-neill" />
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp,700w" class="d-block w-100" alt="mateus-campos-felipe"/>
 			</div>
         </div>
     </section>
@@ -235,16 +235,16 @@
                 </form>
             </div>
             <div class="picture right">
-                <img src="./assets/images/camera.webp" srcset="./assets/images/camera.webp" alt="Appareil photo">
+                <img src="./assets/images/camera.webp" srcset="./assets/images/camera.webp" width="731px" height="731px" alt="Appareil photo">
             </div>
         </div>
     </section>
 </footer>
 <!-- Scripts -->
-<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="./assets/maugallery.js"></script>
-<script src="./assets/scripts.js"></script>
+<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script defer src="./assets/maugallery.js"></script>
+<script defer src="./assets/scripts.js"></script>
 </body>
 </html>
 
